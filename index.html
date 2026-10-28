@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#020305">
+<title>Para Dulce 🌹</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@1,700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;background:#020305;color:#ffe8f1}body{font-family:Georgia,serif;overflow-x:hidden}button{font:inherit}button,[role=button]{-webkit-tap-highlight-color:transparent}button:focus-visible,[role=button]:focus-visible{outline:2px solid #ffd1e5;outline-offset:6px}#sky{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}.scene{position:relative;height:100svh;height:100dvh;min-height:540px;display:flex;flex-direction:column;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 75%,#0e27231c,transparent 52%)}header{text-align:center;z-index:1;width:min(92%,650px);padding-top:max(34px,env(safe-area-inset-top));flex:none;animation:reveal 2s .5s both}h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(19px,4.4vw,30px);font-style:italic;font-weight:700;line-height:1.3;color:#ff7eb6;text-shadow:0 0 14px #ff4d9580,0 0 38px #ff3a7845;margin:0 auto;max-width:580px}.dedication{font-family:'Great Vibes','Brush Script MT',cursive;font-size:clamp(29px,6vw,42px);font-weight:400;color:#f7b5ce;margin:15px 0 0;text-shadow:0 0 18px #f76fa557}.bouquet-wrap{position:relative;flex:1;min-height:0;width:min(100%,640px);display:flex;justify-content:center;align-items:center}.bouquet-wrap:after{content:'';position:absolute;bottom:7%;width:60%;height:20%;background:radial-gradient(ellipse,#2bbf8d10,transparent 65%);pointer-events:none}#bouquet{height:100%;width:100%;overflow:visible}.hint{margin:0 0 max(25px,env(safe-area-inset-bottom));font:12px/1.5 system-ui,sans-serif;letter-spacing:2px;color:#c18eaa;animation:hint 3s 4s infinite;transition:opacity .5s}.hint.hidden{opacity:0;animation:none}.subphrase{z-index:1;flex:none;width:min(92%,560px);margin:0 0 18px;text-align:center;font-family:'Great Vibes','Brush Script MT',cursive;font-size:clamp(23px,5.8vw,38px);line-height:1.2;color:#ffa4cb;text-shadow:0 0 16px #ff5fa055;animation:reveal 2s 3.6s both}.plant{transform-origin:250px 620px;animation:sway var(--period) ease-in-out var(--phase) infinite alternate}.stem{fill:none;stroke:url(#stem);stroke-width:3.7;stroke-linecap:round;stroke-dasharray:1;animation:draw 2.1s var(--delay) both}.leaf{animation:unfold 1.3s calc(var(--delay) + .7s) both}.rose{cursor:pointer;outline:none}.rose .head{animation:breathe 4.8s ease-in-out var(--phase) infinite alternate;filter:url(#glow)}.rose:hover .head,.rose:focus-visible .head{filter:url(#bright)}.rose:active .head{opacity:.8}.bloom{animation:bloom 1.8s calc(var(--delay) + 1.2s) both}.petal{animation:open 1.2s calc(var(--delay) + 1.3s + var(--p)*.12s) both;transform-origin:0 18px}.fern{transform-origin:250px 620px;animation:sway var(--period) ease-in-out var(--phase) infinite alternate}.fern-growth{animation:unfold 2s 1s both;transform-origin:250px 620px}.music{position:fixed;right:18px;bottom:max(18px,env(safe-area-inset-bottom));width:42px;height:42px;border:1px solid #ffb3d038;border-radius:50%;background:#160e19b0;color:#ffc1da;font-size:23px;cursor:pointer;z-index:3;backdrop-filter:blur(10px)}.music[aria-pressed=true]{box-shadow:0 0 19px #ff6da52b}.overlay{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:24px;background:#000b;backdrop-filter:blur(12px);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}.overlay.visible{opacity:1;visibility:visible}.card{position:relative;width:min(100%,390px);max-height:90svh;overflow:auto;padding:28px 24px;text-align:center;border:1px solid #f69fc13d;border-radius:26px;background:linear-gradient(145deg,#271421ed,#100e18f5);box-shadow:0 20px 90px #0009,0 0 50px #fa6c9e12;transform:translateY(14px) scale(.95);transition:transform .3s}.visible .card{transform:translateY(0) scale(1)}.close{position:absolute;right:10px;top:7px;z-index:2;border:0;background:transparent;color:#f9c8db;font:30px system-ui;cursor:pointer;width:36px;height:36px}.photo-frame{margin-top:12px;aspect-ratio:4/5;border-radius:17px;overflow:hidden;background:#170f1a;border:1px solid #ee8db65c;box-shadow:0 0 25px #ff6ba327;display:grid;place-items:center}.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;grid-area:1/1;min-height:0}.placeholder{grid-area:1/1;padding:25px;color:#dda5bb}.placeholder .icon{display:block;font-size:46px;margin-bottom:15px}.placeholder p{font-size:15px;line-height:1.6}.choose{background:#e877a0;color:#260c19;border:0;padding:11px 20px;border-radius:22px;cursor:pointer;font:13px system-ui}.change{background:none;border:0;color:#c99bad;text-decoration:underline;text-underline-offset:4px;font:11px system-ui;margin:15px 0 0;cursor:pointer}.card h2{font-family:'Great Vibes','Brush Script MT',cursive;color:#ffa4cb;font-size:37px;font-weight:400;margin:16px 0 8px}.message{font-size:16px;line-height:1.6;margin:0;color:#f0cddc}[hidden]{display:none!important}@keyframes reveal{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}@keyframes unfold{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}@keyframes bloom{from{transform:scale(.22,.6)}to{transform:scale(1)}}@keyframes open{from{transform:scale(.28,.8);opacity:.15}to{transform:scale(1);opacity:1}}@keyframes sway{from{transform:rotate(-2deg)}to{transform:rotate(2deg)}}@keyframes breathe{from{transform:scale(.98)}to{transform:scale(1.025)}}@keyframes hint{50%{opacity:.45}}@media(min-width:700px){header{padding-top:38px}.dedication{margin-top:12px}.hint{margin-bottom:22px}}@media(max-height:650px){header{padding-top:20px}h1{font-size:18px}.subphrase{font-size:25px;margin-bottom:4px}.dedication{font-size:27px;margin-top:8px}.hint{margin-bottom:15px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.stem{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<main class="scene" id="scene">
+<header><h1 id="phrase"></h1><p class="dedication" id="dedication"></p></header>
+<div class="bouquet-wrap">
+<svg id="bouquet" viewBox="0 0 500 670" xmlns="http://www.w3.org/2000/svg" aria-label="Ramo de siete rosas para Dulce Trejos">
+<defs>
+<linearGradient id="stem" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#073c35"/><stop offset=".5" stop-color="#54bf86"/><stop offset="1" stop-color="#14614d"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#083f37"/><stop offset=".55" stop-color="#178b71"/><stop offset="1" stop-color="#62c4a0"/></linearGradient>
+<radialGradient id="pink" cx=".5" cy=".12" r=".95"><stop stop-color="#ffd1e1"/><stop offset=".36" stop-color="#f47ca8"/><stop offset=".72" stop-color="#c32961"/><stop offset="1" stop-color="#710d38"/></radialGradient>
+<radialGradient id="red" cx=".45" cy=".08" r="1"><stop stop-color="#ff9aac"/><stop offset=".35" stop-color="#ef4268"/><stop offset=".72" stop-color="#ac173f"/><stop offset="1" stop-color="#570a29"/></radialGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffc7d9"/><stop offset=".32" stop-color="#ef6796"/><stop offset="1" stop-color="#9f174c"/></linearGradient>
+<filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="4"/><feComponentTransfer><feFuncA type="linear" slope=".3"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="bright" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="6"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g id="ferns"></g><g id="flowers"></g>
+</svg>
+</div>
+<p class="subphrase" id="subphrase"></p>
+<p class="hint" id="hint">Toca una rosa 🌹</p>
+</main>
+<button class="music" id="music" aria-label="Reproducir música" aria-pressed="false">♪</button>
+<div class="overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name" aria-describedby="message" inert>
+<div class="card"><button class="close" id="close" aria-label="Cerrar">×</button>
+<div class="photo-frame"><img id="photo" alt="Un recuerdo especial de Dulce" hidden><div class="placeholder" id="placeholder"><span class="icon" aria-hidden="true">🌹</span><p>Un lugar para nuestro<br>recuerdo más bonito.</p></div></div>
+<h2 id="modal-name"></h2><p class="message" id="message"></p>
+</div></div>
+<audio id="audio" loop preload="none"></audio>
+<script>
+// Personaliza estos detalles; todos los archivos se quedan contigo.
+const CONFIG = {
+  nombre: 'Dulce Trejos',
+  frase: 'Sé que no estás pasando por tu mejor momento, pero quiero que sepas que me tienes para lo que necesites',
+  frase2: 'Espero que esto alegre un poquito tu día 💗',   // va debajo del ramo
+  mensaje: 'Eres lo más bonito que tengo, Dulce 🌹',
+  foto: 'foto.jpg',      // la ÚNICA foto; poner un archivo con este nombre junto a index.html
+  musica: 'musica.mp3'
+};
+const $ = id => document.getElementById(id);
+$('phrase').textContent = CONFIG.frase;
+$('dedication').textContent = `Para ${CONFIG.nombre}`;
+$('subphrase').textContent = CONFIG.frase2;
+$('modal-name').textContent = CONFIG.nombre;
+$('message').textContent = CONFIG.mensaje;
+const motion = matchMedia('(prefers-reduced-motion: reduce)');
+const NS = 'http://www.w3.org/2000/svg';
+function svg(tag, attrs, parent) {
+  const el = document.createElementNS(NS, tag);
+  for (const [key, value] of Object.entries(attrs)) el.setAttribute(key, value);
+  if (parent) parent.appendChild(el);
+  return el;
+}
+// Cada tallo nace del mismo punto; los pétalos forman copas y un corazón en espiral.
+const roses = [
+  [153,186,.87,-19,'red'],[346,196,.85,18,'pink'],
+  [246,119,1.02,-5,'pink'],[94,300,.81,-27,'pink'],
+  [401,311,.8,24,'red'],[194,292,1.05,-12,'red'],[305,340,.98,12,'pink']
+];
+const petals = [
+  'M0 30 C-24 39 -57 10 -51 -17 C-49 -31 -35 -34 -25 -25 C-9 -31 9 -31 25 -25 C39 -35 54 -24 53 -10 C53 18 24 39 0 30Z',
+  'M-2 30 C-35 31 -59 0 -43 -22 C-36 -31 -20 -21 -14 -9 C-5 4 5 17 -2 30Z',
+  'M0 31 C33 30 57 1 43 -23 C35 -33 18 -20 13 -7 C5 8 -6 18 0 31Z',
+  'M-34 -8 C-40 -36 -13 -48 4 -38 C24 -46 40 -29 32 -10 C18 8 -19 9 -34 -8Z',
+  'M-1 24 C-29 21 -40 -4 -28 -23 C-18 -32 -5 -23 -4 -11 C-4 2 14 11 -1 24Z',
+  'M-3 24 C26 23 39 -5 27 -23 C17 -30 5 -20 6 -9 C7 4 -13 10 -3 24Z',
+  'M-23 -9 C-24 -28 -7 -38 9 -31 C25 -30 29 -12 15 -3 C2 4 -13 4 -23 -9Z',
+  'M-17 -6 C-20 -23 -4 -29 7 -24 C18 -20 18 -8 6 -5 C-4 0 -13 7 -17 -6Z',
+  'M-7 -7 C-17 -20 -1 -28 9 -18 C16 -9 4 -2 -4 1 C0 -7 7 -9 3 -14 C-1 -18 -7 -14 -7 -7Z',
+  'M-36 0 C-23 5 -11 6 0 17 C11 5 29 2 38 -2 C35 25 13 37 0 33 C-19 32 -32 20 -36 0Z'
+];
+roses.forEach(([x,y,size,angle,tone], i) => {
+  const delay = i*.16;
+  const plant = svg('g', {class:'plant',style:`--period:${4+i*.43}s;--phase:${-i*.8}s;--delay:${delay}s`}, $('flowers'));
+  svg('path',{class:'stem',d:`M250 620 C${250+(x-250)*.18} 505 ${x+(250-x)*.15} ${y+120} ${x} ${y+23}`,pathLength:1},plant);
+  [0,1,2].forEach(j => {
+    const t = .31+j*.18, lx = x+(250-x)*t, ly = y+35+(585-y)*t, dir = (i+j)%2 ? 1:-1;
+    const position = svg('g',{transform:`translate(${lx} ${ly}) rotate(${dir*35}) scale(${dir} 1)`},plant);
+    const leaf = svg('g',{class:'leaf'},position);
+    svg('path',{d:'M0 0 C-5 -31 22 -63 53 -65 C52 -31 32 -3 0 0Z',fill:'url(#leaf)',opacity:.86},leaf);
+    svg('path',{d:'M0 0 Q25 -29 49 -61 M17 -22 L13 -39 M29 -36 L42 -39',fill:'none',stroke:'#99dfb3', 'stroke-width':.75,opacity:.45},leaf);
+  });
+  const position = svg('g',{transform:`translate(${x} ${y}) rotate(${angle}) scale(${size})`},plant);
+  const button = svg('g',{class:'rose',tabindex:0,role:'button','aria-label':'Abrir foto','aria-haspopup':'dialog'},position);
+  svg('ellipse',{cx:0,cy:0,rx:57,ry:49,fill:'transparent'},button);
+  const head = svg('g',{class:'head'},button);
+  svg('path',{d:'M0 38 Q-25 29 -31 9 Q-13 19 -7 16 L0 6 L8 18 Q22 18 33 9 Q24 31 0 38Z',fill:'url(#leaf)'},head);
+  const bloom = svg('g',{class:'bloom'},head);
+  petals.forEach((d,p) => svg('path',{d,class:'petal',style:`--p:${p}`,fill:`url(#${p===8?'fold':tone})`,stroke:tone==='pink'?'#ffb4d0':'#ff8da6','stroke-opacity':.42,'stroke-width':.7,'stroke-linejoin':'round'},bloom));
+  svg('path',{d:'M-12 -15 C-10 -29 17 -25 16 -12 C14 1 -9 3 -9 -9 C-9 -18 8 -20 8 -11 C8 -5 -2 -5 -1 -11',fill:'none',stroke:'#ffacc9','stroke-width':1.5,opacity:.85},bloom);
+  button.addEventListener('click',()=>openModal(button));
+  button.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openModal(button);}});
+});
+// Frondas curvas con pequeñas hojas repetidas a lo largo de la curva.
+for(let side of [-1,1]) for(let f=0;f<4;f++) {
+  const fern=svg('g',{class:'fern',style:`--period:${4.5+f*.6}s;--phase:${-f}s`},$('ferns'));
+  const growth=svg('g',{class:'fern-growth'},fern);
+  const reach=95+f*22, rise=95+f*31;
+  const pts=[];
+  for(let j=0;j<=26;j++) {
+    const t=j/26;
+    pts.push([250+side*(reach*Math.sin(t*1.65)),620-rise*t]);
+  }
+  const end=pts[26];
+  svg('path',{d:`M${pts.map(p=>p.join(' ')).join(' L')} q${side*18} -25 ${-side*3} -30 q${-side*17} -1 ${-side*10} 11`,fill:'none',stroke:'#27927a','stroke-width':1.5,opacity:.75},growth);
+  for(let j=2;j<25;j++) {
+    const [x,y]=pts[j], length=19*(1-j/31);
+    for(const s of [-1,1]) svg('path',{d:`M${x} ${y} q${s*length} ${-length*.15} ${s*length*1.3} ${-length} Q${x+s*length*.25} ${y-length} ${x} ${y}`,fill:j%2?'#167561':'#29977a',opacity:.65},growth);
+  }
+}
+const modal=$('modal'), close=$('close');
+let previousFocus=null;
+function openModal(source) {
+  previousFocus=source || document.activeElement;
+  modal.inert=false;modal.classList.add('visible');
+  $('scene').inert=true;$('music').inert=true;
+  $('hint').classList.add('hidden');close.focus();
+  startMusic();
+}
+function closeModal() {
+  modal.classList.remove('visible');modal.inert=true;
+  $('scene').inert=false;$('music').inert=false;
+  previousFocus?.focus();
+}
+close.addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+document.addEventListener('keydown',e=>{
+  if(!modal.classList.contains('visible'))return;
+  if(e.key==='Escape')closeModal();
+  if(e.key==='Tab') {
+    e.preventDefault();close.focus();
+  }
+});
+const photo=$('photo');
+photo.onload=()=>{photo.hidden=false;$('placeholder').hidden=true;};
+photo.onerror=()=>{photo.hidden=true;$('placeholder').hidden=false;};
+photo.src=CONFIG.foto;
+const audio=$('audio'), music=$('music');let attempted=false;
+audio.src=CONFIG.musica;audio.volume=.65;
+function startMusic(){if(attempted)return;attempted=true;audio.play().catch(()=>{});}
+document.addEventListener('pointerdown',e=>{if(!music.contains(e.target))startMusic();},{passive:true});
+music.onclick=()=>{attempted=true;if(audio.paused)audio.play().catch(()=>{});else audio.pause();};
+function musicState(){music.setAttribute('aria-pressed',String(!audio.paused));music.setAttribute('aria-label',audio.paused?'Reproducir música':'Pausar música');}
+audio.addEventListener('play',musicState);audio.addEventListener('pause',musicState);
+audio.addEventListener('error',()=>{music.hidden=true;});
+// Un solo lienzo, con un máximo de 44 partículas y estrellas independientes.
+const canvas=$('sky'),ctx=canvas.getContext('2d');
+let w=0,h=0,stars=[],particles=[],last=0,raf=0,shoot=null,nextShoot=0;
+const random=(a,b)=>a+Math.random()*(b-a);
+function particle(initial=false){return {x:random(0,w),y:initial?random(0,h):h+20,r:random(.6,2),speed:random(10,28),phase:random(0,6.28),petal:false};}
+function resize(){
+  w=innerWidth;h=innerHeight;const dpr=Math.min(devicePixelRatio||1,2);
+  canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);
+  stars=Array.from({length:Math.min(150,Math.floor(w*h/4200))},()=>({x:random(0,w),y:random(0,h),r:random(.35,1.3),phase:random(0,6.28)}));
+  particles=Array.from({length:34},()=>particle(true));
+  render(performance.now(),0);
+}
+function render(now,dt){
+  ctx.clearRect(0,0,w,h);const time=now/1000;
+  for(const s of stars){ctx.globalAlpha=motion.matches?.65:.25+.65*(.5+.5*Math.sin(time*.8+s.phase));ctx.fillStyle='#dfedf3';ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fill();}
+  ctx.globalAlpha=1;
+  if(motion.matches)return;
+  if(particles.length<44 && Math.random()<dt*.3)particles.push({x:random(w*.2,w*.8),y:h*.3,r:random(4,7),speed:random(18,30),phase:random(0,6.28),petal:true});
+  for(let i=particles.length-1;i>=0;i--){const p=particles[i];p.y+=(p.petal?1:-1)*p.speed*dt;p.x+=Math.sin(time+p.phase)*dt*(p.petal?13:5);
+    if(p.y< -20||p.y>h+30){if(p.petal){particles.splice(i,1);continue;}Object.assign(p,particle());}
+    ctx.save();ctx.translate(p.x,p.y);ctx.globalAlpha=p.petal?Math.max(0,.65*(1-p.y/h)):Math.min(.65,Math.max(0,(h-p.y)/100));
+    ctx.fillStyle=p.petal?'#f171a2':i%3?'#f6a1c7':'#fff2f8';ctx.shadowColor='#ff71b0';ctx.shadowBlur=p.petal?8:10;
+    if(p.petal){ctx.rotate(Math.sin(time+p.phase)*.8+time*.3);ctx.beginPath();ctx.moveTo(-p.r,0);ctx.bezierCurveTo(-p.r,-p.r*1.5,p.r*1.5,-p.r,p.r,p.r*.5);ctx.quadraticCurveTo(0,p.r*1.3,-p.r,0);ctx.fill();}
+    else{ctx.beginPath();ctx.arc(0,0,p.r,0,Math.PI*2);ctx.fill();}ctx.restore();
+  }
+  if(now>nextShoot&&!shoot){shoot={x:random(w*.2,w*.85),y:random(0,h*.3),age:0};nextShoot=now+random(14000,27000);}
+  if(shoot){shoot.age+=dt;shoot.x-=dt*360;shoot.y+=dt*160;ctx.globalAlpha=Math.max(0,Math.sin(shoot.age*Math.PI));const g=ctx.createLinearGradient(shoot.x,shoot.y,shoot.x+80,shoot.y-36);g.addColorStop(0,'#fff3fa');g.addColorStop(1,'#ffffff00');ctx.strokeStyle=g;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(shoot.x,shoot.y);ctx.lineTo(shoot.x+80,shoot.y-36);ctx.stroke();ctx.globalAlpha=1;if(shoot.age>=1)shoot=null;}
+}
+function frame(now){const dt=Math.min((now-last)/1000,.04);last=now;render(now,dt);raf=requestAnimationFrame(frame);}
+function restart(){cancelAnimationFrame(raf);last=performance.now();nextShoot=last+12000;if(!motion.matches&&!document.hidden)raf=requestAnimationFrame(frame);else render(last,0);}
+window.addEventListener('resize',resize);motion.addEventListener('change',restart);document.addEventListener('visibilitychange',restart);
+resize();restart();
+</script>
+</body>
+</html>
